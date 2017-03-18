@@ -4,7 +4,7 @@ The purpose of this personal project is to develop a portfolio website, as well 
 
 ##Helpful links
 
-the following links were helful in the creation of this website:
+The following links were helpful in the creation of this website:
 
 |Help with      |Link                                   |
 |---------------|---------------------------------------|
