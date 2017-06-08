@@ -9,18 +9,61 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <style>
+      body, html {
+          height: 100%;
+          background-color: black;
+      }
+     .parallax{
+         background-image: url("http://www.intrawallpaper.com/static/images/Fall-wallpaper-1366x768-HD-wallpaper_vB9bwin.jpg");
+         height: 10%;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+    .hero-image{
+        background-image: url("https://images5.alphacoders.com/346/346613.jpg");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+     .hero-text {
+         text-align: center;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: white;
+     }
+
+     .hero-text button {
+         border: none;
+         outline: 0;
+         display: inline-block;
+         padding: 10px 25px;
+         color: black;
+         background-color: #ddd;
+         text-align: center;
+         cursor: pointer;
+     }
+
+     .hero-text button:hover {
+         background-color: #555;
+         color: white;
+     }
+
+
+
+
   .bg-1{
-     background-color: #00ccfd; 
+     background-color: #9f9f9f;
       color: #ffffff;
   }
-  .bg-2{
-     background-color:  #A4C639; 
-      color: #ffffff;
-  }
-  .bg-3{
-     background-color: #ff34b3; 
-      color: #ffffff;
-  }
+
   .container-fluid {
       padding-top: 35px;
       padding-bottom: 35px;
@@ -44,28 +87,26 @@
   </div>
   </nav>
 
-  <div class = "container-fluid bg-1 text-center">
-    <h1>Danny Gonzalez</h1>
-    <div class="row">
-        <div class="col-sm-8">
-          <img src = "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/11887962_789037027861928_6892899497242566744_n.jpg?oh=b90ff1bdafce9f086edf4b11b819438a&oe=593F836C" class="img-circle" width="175" height="175">
-          <h2>Software developer!</h2>
-        </div>
-        <div class="col-sm-4">
-          <h2>Quick-Links:</h2>
-          <a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" class="btn btn-primary btn-lg btn-block" role="button" target="_blank">Resume</a>
-          <a href="https://github.com/dgonza12" class="btn btn-primary btn-lg btn-block" role="button" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/danny-gonzalez-736202137" class="btn btn-primary btn-lg btn-block" role="button" target="_blank">LinkedIn</a>
-        </div>
-    </div>
+  <div class="parallax"></div>
+
+  <div class="hero-image">
+      <div class="hero-text">
+          <h1 style="font-size: 70px">Danny Gonzalez</h1>
+          <p>And I'm a Photographer</p>
+          <a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank"><button>Resume</button></a>
+          <a href="https://github.com/dgonza12" target="_blank"><button>GitHub</button></a>
+          <a href="https://www.linkedin.com/in/danny-gonzalez-736202137" target="_blank"><button>LinkedIn</button></a>
+      </div>
   </div>
 
-  <div class = "container-fluid bg-2 text-right">
-    <img src = "https://68.media.tumblr.com/01193a69e322ba5399c877db68bf33d0/tumblr_oodvqeCew51wnpolio1_540.jpg" class="img-circle" width="175" height="175">
-    <h1>Working on some little apps for fun</h1>
-     <img src = "https://68.media.tumblr.com/f140e798405bfdde6408ea588e502b4c/tumblr_oodw29fOKn1wnpolio1_1280.jpg" class="img-rounded" width="175" height="175">
-    <p>Map Maker is going to be a simple app for designing maps in games. A sort of sketch tool for on the go. I will add placeable shapes soon.</p>
+  <div class="parallax"></div>
+
+
+  <div class = "container-fluid bg-1 text-center">
+      <p>Thanks for visiting my website, please note I do not own any of the images used.</p>
   </div>
+
+
 
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
