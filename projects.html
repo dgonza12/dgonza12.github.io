@@ -43,10 +43,10 @@
 <div class = "container-fluid">
     <h1>Filter Projects</h1>
 
-    <button onclick="showWeb()">Web Applications</button>
-    <button onclick="showMob()">Mobile Applications</button>
-    <button onclick="showDesk()">Desktop Applications</button>
-    <button onclick="showAll()">Show All</button>
+    <button id = "WebButton">Web Applications</button>
+    <button id = "MobButton">Mobile Applications</button>
+    <button id = "DesButton">Desktop Applications</button>
+    <button id = "AllButton">Show All</button>
 </div>
 
 <div id="EventBrowser" class = "container-fluid">
@@ -137,48 +137,9 @@
     </ul>
 </div>
 
-<script>
-    const EB = document.getElementById("EventBrowser");
-    const GY = document.getElementById("GatorYard");
-    const MM = document.getElementById("MovieMaker");
-    const AB = document.getElementById("Agkz_blackjack");
-    const BS = document.getElementById("BotShot");
-
-    function showAll() {
-        EB.style.display = "block";
-        GY.style.display = "block";
-        MM.style.display = "block";
-        AB.style.display = "block";
-        BS.style.display = "block";
-    }
-
-    function hideAll() {
-        EB.style.display = "none";
-        GY.style.display = "none";
-        MM.style.display = "none";
-        AB.style.display = "none";
-        BS.style.display = "none";
-    }
-
-    function showWeb() {
-        hideAll();
-        GY.style.display = "block";
-        AB.style.display = "block";
-    }
-
-    function showMob() {
-        hideAll();
-        EB.style.display = "block";
-        BS.style.display = "block";
-    }
-
-    function showDesk() {
-        hideAll();
-        MM.style.display = "block";
-    }
-
-</script>
 
 
 </body>
+<script type="text/javascript" src="JavaScript/projects.js"></script>
+
 </html>
