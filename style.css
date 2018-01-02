@@ -1,0 +1,20 @@
+.projectname{
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+}
+
+.Filter {
+    padding: 10px;
+}
+
+.project {
+    background-color: #ADD8E6;
+}
+
+.github-link{
+    color:blue;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+}

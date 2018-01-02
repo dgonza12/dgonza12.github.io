@@ -20,6 +20,18 @@ function hideAll() {
     $BS.fadeOut();
 }
 
+$('.Filter').on('mouseenter',() => {
+    $('#WebButton').show();
+    $('#MobButton').show();
+    $('#DesButton').show();
+    $('#AllButton').show();
+}).on('mouseleave',() => {
+    $('#WebButton').hide();
+    $('#MobButton').hide();
+    $('#DesButton').hide();
+    $('#AllButton').hide();
+});;
+
 $('#WebButton').on('click',() => {
     hideAll();
     $GY.fadeIn();
