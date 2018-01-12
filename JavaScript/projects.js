@@ -3,6 +3,8 @@ const $GY = $("#GatorYard");
 const $MM = $("#MovieMaker");
 const $AB = $("#Agkz_blackjack");
 const $BS = $("#BotShot");
+const $HR = $("#HeroRecall");
+
 
 function showAll() {
     $EB.fadeIn();
@@ -10,6 +12,7 @@ function showAll() {
     $MM.fadeIn();
     $AB.fadeIn();
     $BS.fadeIn();
+    $HR.fadeIn();
 }
 
 function hideAll() {
@@ -18,6 +21,7 @@ function hideAll() {
     $MM.fadeOut();
     $AB.fadeOut();
     $BS.fadeOut();
+    $HR.fadeOut();
 }
 
 $('.Filter').on('mouseenter',() => {
@@ -36,6 +40,7 @@ $('#WebButton').on('click',() => {
     hideAll();
     $GY.fadeIn();
     $AB.fadeIn();
+    $HR.fadeIn();
 });
 
 $('#MobButton').on('click',() => {
