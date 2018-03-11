@@ -1,0 +1,116 @@
+body{
+    font-family: "Helvetica Neue",OpenSans;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav bar */
+nav{
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0;
+}
+
+nav div{
+    flex: 1;
+}
+
+nav div a{
+    color: #EE4266;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav div:nth-child(even){
+    color: #17BEBB!important;
+}
+
+
+/* Home */
+#home{
+    padding: 10%;
+    width: 80%;
+    color: #ffffff;
+    background-color: #4357AD;
+    text-align: center;
+}
+
+#home a{
+    background-color: #ffffff;
+    color: #4357AD;
+    text-decoration: none;
+    border-radius: 500px;
+    padding: 5px;
+}
+
+/* About */
+#about{
+    padding: 10%;
+    width: 80%;
+    color: #ffffff;
+    background-color: #17BEBB;
+    text-align: center;
+}
+
+/* Projects */
+#projects{
+    padding: 10%;
+    width: 80%;
+    color: #ffffff;
+    background-color: #EE4266;
+    text-align: center;
+}
+
+#projects div{
+    text-align: left!important;
+    border-bottom: 1px solid #ffffff;
+}
+
+#projects div a{
+    background-color: #ffffff;
+    color: #EE4266;
+    text-decoration: none;
+    border-radius: 500px;
+    padding: 5px;
+}
+
+/* Blog Page */
+#blogs{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#blogs h1{
+    text-align: center;
+}
+
+.round-image-holder{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.round-image-holder > img{
+    width: 100%;
+    height: auto;
+}
+
+.blogContainer{
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+}
