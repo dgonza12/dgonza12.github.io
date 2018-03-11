@@ -1,139 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title> Danny Gonzalez </title>  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <style>
-      body, html {
-          height: 100%;
-          background-color: black;
-      }
-     .parallax{
-         background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d2/Noe_Valley_San_Francisco_5.jpg");
-         height: 10%;
-         background-attachment: fixed;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
-
-    .hero-image{
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Fort_Point_National_Historic_Site_and_Golden_Gate_Bridge.jpg");
-        height: 75%;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-     .hero-text {
-         text-align: center;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         color: white;
-     }
-
-     .hero-text button {
-         border: none;
-         outline: 0;
-         display: inline-block;
-         padding: 10px 25px;
-         color: black;
-         background-color: #ddd;
-         text-align: center;
-         cursor: pointer;
-     }
-
-     .hero-text button:hover {
-         background-color: #555;
-         color: white;
-     }
-
-
-
-
-  .bg-1{
-     background-color: #646464;
-      color: #ffffff;
-  }
-
-   .bg-2{
-          background-color: #282828;
-          color: #ffffff;
-   }
-
-  .container-fluid {
-      padding-top: 35px;
-      padding-bottom: 35px;
-  }
-  </style>  
-  
-</head>  
-    
+    <meta charset="UTF-8">
+    <title>Danny Gonzalez</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 <body>
 
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid2">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Danny Gonzalez</a>
+<nav>
+    <div><a href="#home">Home</a></div>
+    <div><a href="#about">About</a></div>
+    <div><a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank">Resume</a></div>
+    <div><a href="#projects">Projects</a></div>
+    <div><a href="#blogs">Blog</a></div>
+</nav>
+
+<div id="home">
+    <h1>Danny Gonzalez</h1>
+    <p>Software engineer</p>
+    <a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank">Resume</a>
+    <a href="https://github.com/dgonza12" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/danny-gonzalez-736202137" target="_blank">LinkedIn</a>
+</div>
+
+<div id="about">
+    <h1>About</h1>
+    <p>Raised in the bay area</p>
+</div>
+
+<div id="projects">
+    <h1>Projects</h1>
+    <div id="EventBrowser" class = "container-fluid">
+        <h1>Event Browser <i>Fall 2016</i></h1>
+        <p>Android Application used for finding meetup groups nearby. Built using the Meetup api.</p>
+        <h4>Partners:</h4>
+        <ul>
+            <li>Steven H</li>
+            <li>Jonah Manarang</li>
+        </ul>
+        <a href="https://github.com/csc413-fall-2016/Team16-EventBrowserFinale">GitHub Repository</a>
+        <h4>Technical Stack:</h4>
+        <ul>
+            <li>Meetup Api</li>
+        </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="about.html">About</a></li>
-      <li><a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing">Resume</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-  </div>
-  </nav>
 
-  <div class="parallax"></div>
+    <div id="GatorYard" class = "container-fluid">
+        <h1>GatorYard <i>Spring 2017</i></h1>
+        <p>A buy and sell website for SFSU students.</p>
+        <h4>Partners:</h4>
+        <ul>
+            <li>Ericka Murphy - Team Lead</li>
+            <li>Aura Davis - Team CTO</li>
+            <li>Cynthia Chao</li>
+            <li>Jimmy Chu</li>
+            <li>Michael Menlikalew</li>
+            <li>Phinehas Sridhar</li>
+        </ul>
+        <a href="https://github.com/phins/S17G01">GitHub Repository</a>
+        <h4>Technical Stack:</h4>
+        <ul>
+            <li>Symphony</li>
+            <li>Twig</li>
+            <li>phpMyAdmin</li>
+            <li>BootStrap</li>
+        </ul>
+    </div>
 
-  <div class="hero-image">
-      <div class="hero-text">
-          <h1 style="font-size: 70px">Danny Gonzalez</h1>
-          <p>And I'm a Software engineer</p>
-          <a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank"><button>Resume</button></a>
-          <a href="https://github.com/dgonza12" target="_blank"><button>GitHub</button></a>
-          <a href="https://www.linkedin.com/in/danny-gonzalez-736202137" target="_blank"><button>LinkedIn</button></a>
-          <a href="#contact"><button>Contact</button></a>
-      </div>
-  </div>
+    <div id="MovieMaker" class = "container-fluid">
+        <h1>MovieMaker <i>Fall 2017</i></h1>
+        <p>A light weight video editor</p>
+        <h4>Partner:</h4>
+        <ul>
+            <li>Kai Kaur</li>
+        </ul>
+        <a href="https://github.com/dgonza12/MovieMaker">GitHub Repository.</a>
+        <a href="https://kaikaur0404.github.io/MovieMaker/">Project website</a>
+        <h4>Technical Stack:</h4>
+        <ul>
+            <li>Python</li>
+            <li>PYQT5</li>
+            <li>Moviepy</li>
+        </ul>
+    </div>
 
-  <div class="parallax"></div>
+    <div id="Agkz_blackjack" class = "container-fluid">
+        <h1>AGKZ blackjack <i>Fall 2017</i></h1>
+        <p>A web application that lets you play blackjack with other players.</p>
+        <h4>Partners:</h4>
+        <ul>
+            <li>Connor Aguilera</li>
+            <li>Kai Kaur</li>
+            <li>Chloe Zirbel</li>
+        </ul>
+        <a href="https://github.com/sfsu-csc-667-fall-2017/term-project-667-aguilera-gonzalez-kaur-zirbel">GitHub Repository</a>
+        <a href="https://agkz-blackjack.herokuapp.com/">Project website</a>
+        <h4>Technical Stack:</h4>
+        <ul>
+            <li>Express.js</li>
+            <li>Postgres</li>
+            <li>Pug</li>
+        </ul>
+    </div>
 
-  <div class = "container-fluid bg-1 text-center">
-      <h1><a id="contact"> Contact: </a></h1>
-      <h2>Email: gdanny120@gmail.com</h2>
-  </div>
+    <div id="BotShot" class = "container-fluid">
+        <h1>BotShot <i>Fall 2017</i></h1>
+        <p>Android augment reality game.</p>
+        <h4>Partners:</h4>
+        <ul>
+            <li>Imran Irfan</li>
+        </ul>
+        <a href="https://github.com/EggnogII/BotShot">GitHub Repository</a>
+        <h4>Technical Stack:</h4>
+        <ul>
+            <li>Unity 3D</li>
+            <li>Vuforia</li>
+        </ul>
+    </div>
+</div>
 
-  <div class="parallax"></div>
+<div id="blogs">
+    <h1>Blog</h1>
+</div>
 
+<script id="blogTemplate" type="text/template">
+    <div class="round-image-holder">
+        <img src="<%= image %>">
+    </div>
+    <div>
+        <h1><%= title %></h1>
+        <p><%= short %></p>
+        <h2><%= date %></h2>
+    </div>
+</script>
 
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/lib/backbone-min.js"></script>
 
-  <div class = "container-fluid bg-2 text-center">
-      <h4>Thanks for visiting my website, please note I do not own any of the images used.</h4>
-      <p>The image used for the paralax is By Jack French from San Francisco, USA (Sutro sunset HDR) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons </p>
-      <p>The image used for the 'hero' image is By Brocken Inaglory (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons</p>
-  </div>
+<script src="js/models/blog.js"></script>
+<script src="js/collections/blog-holder.js"></script>
+<script src="js/views/blog.js"></script>
+<script src="js/views/blog-holder.js"></script>
 
-
-
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-98199579-1', 'auto');
-      ga('send', 'pageview');
-
-  </script>
-  
 </body>
+<script src="js/blog.js"></script>
 </html>
