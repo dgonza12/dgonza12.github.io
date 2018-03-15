@@ -5,6 +5,7 @@ app.Blog = Backbone.Model.extend({
         title: 'no title',
         date: 'no date',
         image: '',
-        short: 'no short blurb'
+        short: 'no short blurb',
+        content: []
     }
 });

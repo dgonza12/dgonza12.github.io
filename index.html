@@ -124,6 +124,9 @@
     </div>
 </div>
 
+<div id="blog"></div>
+<div class="blog-button" id="close-blog">Close</div>
+
 <div id="blogs">
     <h1>Blog</h1>
 </div>
@@ -137,10 +140,31 @@
         <p><%= short %></p>
         <h2><%= date %></h2>
     </div>
+    <div class="blog-button">Open</div>
 </script>
+
+<script id="contentTemplate" type="text/template">
+    <% if (type == 0) { %>
+        <p><%= text %></p>
+    <% } else if (type == 1) {  %>
+        <div class="image-holder">
+            <img src="<%= image %>"/>
+        </div>
+    <% } else if (type == 1) {  %>
+        <h2><%= heading %></h2>
+    <% } else {  %>
+        <div> <%= title %></div>
+    <% } %>
+</script>
+
 
 <script src="js/lib/underscore-min.js"></script>
 <script src="js/lib/backbone-min.js"></script>
+
+<script src="js/models/content.js"></script>
+<script src="js/collections/content-holder.js"></script>
+<script src="js/views/content.js"></script>
+<script src="js/views/content-holder.js"></script>
 
 <script src="js/models/blog.js"></script>
 <script src="js/collections/blog-holder.js"></script>

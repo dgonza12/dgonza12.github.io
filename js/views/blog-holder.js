@@ -18,6 +18,6 @@ app.blogHolderView = Backbone.View.extend({
         var blogView = new app.BlogView({
             model: item
         });
-        this.el.append( blogView.render().el )
+        this.el.append( blogView.render().el );
     }
 });

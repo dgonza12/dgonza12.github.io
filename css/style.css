@@ -114,3 +114,41 @@ nav div:nth-child(even){
     align-items: center;
     border-bottom: 1px solid #000000;
 }
+
+.blog-button{
+    cursor: pointer;
+    margin-left: auto;
+    border-radius: 500px;
+    color: #ffffff;
+    background-color: #EE4266;
+    padding: 10px;
+}
+
+#blog{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#blog > div{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+}
+
+#blog .image-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog .image-holder img{
+    width: 80%;
+    height: auto;
+}
+
+#close-blog{
+    margin-right: 10%;
+    width: 100px;
+    text-align: center;
+}
