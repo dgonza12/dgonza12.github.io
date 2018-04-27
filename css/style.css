@@ -148,7 +148,9 @@ nav div:nth-child(even){
 }
 
 #close-blog{
+    margin-bottom: 100px;
     margin-right: 10%;
     width: 100px;
     text-align: center;
+    box-shadow: 0 64px 64px 0 rgba(58,70,92,0.20), 0 32px 32px 0 rgba(58,70,92,0.20), 0 16px 16px 0 rgba(58,70,92,0.20), 0 8px 8px 0 rgba(58,70,92,0.20), 0 4px 4px 0 rgba(58,70,92,0.20), 0 2px 2px 0 rgba(58,70,92,0.20);
 }
