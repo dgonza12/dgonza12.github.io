@@ -1,156 +1,61 @@
 body{
-    font-family: "Helvetica Neue",OpenSans;
-    padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.landing{
+    background: linear-gradient(#fff,#FF729F);
+    color: #3f3f3f;
+}
+.about{
+    background: linear-gradient(#FF729F, rgb(95, 195, 228));
+    color: #fff;
+}
+.work-experience{
+    background: linear-gradient(rgb(95, 195, 228), #fff07c);
+    color: #fff;
+}
+.contact{
+    background: linear-gradient(#fff07c, #fff,#81F4E1);
+    color: #fff;
 }
 
-/* Nav bar */
-nav{
-    height: 50px;
-    background: white;
-    display: flex;
-    align-items: center;
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    position: fixed;
-    top: 0;
+.polaroid{
+    background: #fff;
+    border: 1px solid #DFE1E5;
+    padding: 15px 15px 52.5px 15px;
 }
 
-nav div{
-    flex: 1;
+.polaroid .img-holder{
+    background: #000;
 }
 
-nav div a{
-    color: #EE4266;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-nav div:nth-child(even){
-    color: #17BEBB!important;
-}
-
-
-/* Home */
-#home{
-    padding: 10%;
-    width: 80%;
-    color: #ffffff;
-    background-color: #4357AD;
-    text-align: center;
-}
-
-#home a{
-    background-color: #ffffff;
-    color: #4357AD;
-    text-decoration: none;
-    border-radius: 500px;
-    padding: 5px;
-}
-
-/* About */
-#about{
-    padding: 10%;
-    width: 80%;
-    color: #ffffff;
-    background-color: #17BEBB;
-    text-align: center;
-}
-
-/* Projects */
-#projects{
-    padding: 10%;
-    width: 80%;
-    color: #ffffff;
-    background-color: #EE4266;
-    text-align: center;
-}
-
-#projects div{
-    text-align: left!important;
-    border-bottom: 1px solid #ffffff;
-}
-
-#projects div a{
-    background-color: #ffffff;
-    color: #EE4266;
-    text-decoration: none;
-    border-radius: 500px;
-    padding: 5px;
-}
-
-/* Blog Page */
-#blogs{
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#blogs h1{
-    text-align: center;
-}
-
-.round-image-holder{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-right: 20px;
-}
-
-.round-image-holder > img{
+.polaroid img{
+    opacity: 0.1;
     width: 100%;
     height: auto;
+    filter: invert(100);
+    transition: all 800ms ease-in;
+    transition-delay: 350ms;
 }
 
-.blogContainer{
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #000000;
+.polaroid.active img{
+    filter: invert(0);
+    opacity: 1;
 }
 
-.blog-button{
-    cursor: pointer;
-    margin-left: auto;
-    border-radius: 500px;
-    color: #ffffff;
-    background-color: #EE4266;
-    padding: 10px;
-}
-
-#blog{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#blog > div{
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
-}
-
-#blog .image-holder{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#blog .image-holder img{
-    width: 80%;
-    height: auto;
-}
-
-#close-blog{
-    margin-bottom: 100px;
-    margin-right: 10%;
-    width: 100px;
+/* Landing */
+.landing {
     text-align: center;
-    box-shadow: 0 64px 64px 0 rgba(58,70,92,0.20), 0 32px 32px 0 rgba(58,70,92,0.20), 0 16px 16px 0 rgba(58,70,92,0.20), 0 8px 8px 0 rgba(58,70,92,0.20), 0 4px 4px 0 rgba(58,70,92,0.20), 0 2px 2px 0 rgba(58,70,92,0.20);
+}
+
+.landing p{
+    font-size: 36px;
+}
+
+.landing h4{
+    font-size: 40px;
+}
+
+.landing h1{
+    font-size: 48px;
 }

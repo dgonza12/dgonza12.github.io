@@ -3,174 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Danny Gonzalez</title>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="title" property="og:title" content="Danny Gonzalez">
+    <meta property="og:type" content="article">
+    <meta name="image" property="og:image" content="Images/danny/beach.jpg">
+    <meta name="description" property="og:description" content="Danny Gonzalez is a software developer at Regalix">
+    <meta name="author" content="Danny Gonzalez">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 </head>
 <body>
-
-<nav>
-    <div><a href="#home">Home</a></div>
-    <div><a href="#about">About</a></div>
-    <div><a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank">Resume</a></div>
-    <div><a href="#projects">Projects</a></div>
-    <div><a href="#blogs">Blog</a></div>
-</nav>
-
-<div id="home">
-    <h1>Danny Gonzalez</h1>
-    <p>Software Developer</p>
-    <a href="https://docs.google.com/document/d/1yo_n_0lHhNeE21x2jj383DUkQsFGx4M8eB_yoqoulNY/edit?usp=sharing" target="_blank">Resume</a>
-    <a href="https://github.com/dgonza12" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/danny-gonzalez-736202137" target="_blank">LinkedIn</a>
-</div>
-
-<div id="about">
-    <h1>About</h1>
-    <p>Raised in the bay area</p>
-</div>
-
-<div id="projects">
-    <h1>Projects</h1>
-    <div id="EventBrowser" class = "container-fluid">
-        <h1>Event Browser <i>Fall 2016</i></h1>
-        <p>Android Application used for finding meetup groups nearby. Built using the Meetup api.</p>
-        <h4>Partners:</h4>
-        <ul>
-            <li>Steven H</li>
-            <li>Jonah Manarang</li>
-        </ul>
-        <a href="https://github.com/csc413-fall-2016/Team16-EventBrowserFinale">GitHub Repository</a>
-        <h4>Technical Stack:</h4>
-        <ul>
-            <li>Meetup Api</li>
-        </ul>
-    </div>
-
-    <div id="GatorYard" class = "container-fluid">
-        <h1>GatorYard <i>Spring 2017</i></h1>
-        <p>A buy and sell website for SFSU students.</p>
-        <h4>Partners:</h4>
-        <ul>
-            <li>Ericka Murphy - Team Lead</li>
-            <li>Aura Davis - Team CTO</li>
-            <li>Cynthia Chao</li>
-            <li>Jimmy Chu</li>
-            <li>Michael Menlikalew</li>
-            <li>Phinehas Sridhar</li>
-        </ul>
-        <a href="https://github.com/phins/S17G01">GitHub Repository</a>
-        <h4>Technical Stack:</h4>
-        <ul>
-            <li>Symphony</li>
-            <li>Twig</li>
-            <li>phpMyAdmin</li>
-            <li>BootStrap</li>
-        </ul>
-    </div>
-
-    <div id="MovieMaker" class = "container-fluid">
-        <h1>MovieMaker <i>Fall 2017</i></h1>
-        <p>A light weight video editor</p>
-        <h4>Partner:</h4>
-        <ul>
-            <li>Kai Kaur</li>
-        </ul>
-        <a href="https://github.com/dgonza12/MovieMaker">GitHub Repository.</a>
-        <a href="https://kaikaur0404.github.io/MovieMaker/">Project website</a>
-        <h4>Technical Stack:</h4>
-        <ul>
-            <li>Python</li>
-            <li>PYQT5</li>
-            <li>Moviepy</li>
-        </ul>
-    </div>
-
-    <div id="Agkz_blackjack" class = "container-fluid">
-        <h1>AGKZ blackjack <i>Fall 2017</i></h1>
-        <p>A web application that lets you play blackjack with other players.</p>
-        <h4>Partners:</h4>
-        <ul>
-            <li>Connor Aguilera</li>
-            <li>Kai Kaur</li>
-            <li>Chloe Zirbel</li>
-        </ul>
-        <a href="https://github.com/sfsu-csc-667-fall-2017/term-project-667-aguilera-gonzalez-kaur-zirbel">GitHub Repository</a>
-        <a href="https://agkz-blackjack.herokuapp.com/">Project website</a>
-        <h4>Technical Stack:</h4>
-        <ul>
-            <li>Express.js</li>
-            <li>Postgres</li>
-            <li>Pug</li>
-        </ul>
-    </div>
-
-    <div id="BotShot" class = "container-fluid">
-        <h1>BotShot <i>Fall 2017</i></h1>
-        <p>Android augment reality game.</p>
-        <h4>Partners:</h4>
-        <ul>
-            <li>Imran Irfan</li>
-        </ul>
-        <a href="https://github.com/EggnogII/BotShot">GitHub Repository</a>
-        <h4>Technical Stack:</h4>
-        <ul>
-            <li>Unity 3D</li>
-            <li>Vuforia</li>
-        </ul>
-    </div>
-</div>
-
-<div id="blog" style="display: none"></div>
-<div class="blog-button" id="close-blog" style="display: none">Close</div>
-
-<div id="blogs">
-    <h1>Blog</h1>
-</div>
-
-<script id="blogTemplate" type="text/template">
-    <div class="round-image-holder">
-        <img src="<%= image %>">
-    </div>
-    <div>
-        <h1><%= title %></h1>
-        <p><%= short %></p>
-        <h2><%= date %></h2>
-    </div>
-    <div class="blog-button">Open</div>
-</script>
-
-<script id="contentTemplate" type="text/template">
-    <% if (type == 0) { %>
-        <p><%= text %></p>
-    <% } else if (type == 1) {  %>
-        <div class="image-holder">
-            <img src="<%= image %>"/>
+    <section class="landing">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <p>Hi, I am</p>
+                    <h1>Danny</h1>
+                    <p>Gonzalez,</p>
+                    <h1>LET'S CREATE</h1>
+                </div>
+                <div class="col-md-7" style="height: 100%">
+                    <p></p>
+                </div>
+            </div>
         </div>
-    <% } else if (type == 1) {  %>
-        <h2><%= heading %></h2>
-    <% } else {  %>
-        <div> <%= title %></div>
-    <% } %>
-</script>
-
-
-<script src="js/lib/underscore-min.js"></script>
-<script src="js/lib/backbone-min.js"></script>
-
-<script src="js/models/content.js"></script>
-<script src="js/collections/content-holder.js"></script>
-<script src="js/views/content.js"></script>
-<script src="js/views/content-holder.js"></script>
-
-<script src="js/models/blog.js"></script>
-<script src="js/collections/blog-holder.js"></script>
-<script src="js/views/blog.js"></script>
-<script src="js/views/blog-holder.js"></script>
-
+    </section>
+    <section class="about" data-section-name="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>About</h1>
+                    <p>Bay area Native,</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="polaroid">
+                        <div class="img-holder">
+                            <img src="Images/danny/beach.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-experience"></section>
+    <section class="contact"></section>
 </body>
-<script src="js/blog.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollify.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </html>
