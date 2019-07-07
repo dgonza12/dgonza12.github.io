@@ -1,116 +1,158 @@
+.color-one-background, .color-two-background, .color-three-background, .color-four-background{
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
 /* Palette one */
 
 .palette-one .color-one-background{
     background: #147587;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-two-background{
     background: #fa7e5c;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-three-background{
     background: #f3ece5;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-four-background{
     background: #fecb5f;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-one-text{
     color: #147587;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-two-text{
     color: #fa7e5c;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-three-text{
     color: #f3ece5;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-one .color-four-text{
-    color: #fecb5f-webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+    color: #fecb5f;
 }
 
 /* Palette two */
 
 .palette-two .color-one-background{
     background: #f7444e;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-two-background{
     background: #78bcc4;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-three-background{
     background: #f7f8f3;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-four-background{
     color: #fff;
     background: #002c3e;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-one-text{
     color: #f7444e;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-two-text{
     color: #78bcc4;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-three-text{
     color: #f7f8f3;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
 .palette-two .color-four-text{
     color: #002c3e;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
 }
 
+/* palette-three */
+.palette-three .color-one-background{
+    background: #CE4A50;
+}
+
+.palette-three .color-three-background{
+    background: #DDEFE3;
+}
+
+.palette-three .color-two-background{
+    background: #2A484E;
+}
+
+.palette-three .color-four-background{
+    background: #A8D8CD;
+}
+
+/* palette-four */
+.palette-four .color-one-background{
+    background: #F8777D;
+    color: #0D1B46;
+}
+
+.palette-four .color-three-background{
+    background: #ECE3E2;
+}
+
+.palette-four .color-three-background .fixed-text{
+    color: rgba(0,200,200,0.2);
+}
+
+.palette-four .color-two-background{
+    background: #0D1B46;
+    color: #F8777D;
+}
+
+.palette-four .quick-links a{
+    color: #0D1B46;
+    display: block;
+    border-radius: 8px;
+    padding: 5px 0;
+    width: 200px;
+    text-align: center;
+}
+
+.palette-four .quick-links a i{
+    margin-right: 15px;
+}
+
+.palette-four .quick-links a:hover {
+    color: #F8777D;
+    background: #0D1B46;
+    text-decoration: none;
+}
+
+.primary-nav.color-two-background{
+    color: #F8777D;
+    transition: all ease-in 200ms;
+}
+
+.palette-four .color-two-background .fixed-text{
+    color: rgba(255,0,0,0.2);
+}
+
+.palette-four .color-four-background{
+    background: #65BCBF;
+}
+
+.palette-four .color-one-text{
+    color: #CE4A50;
+}
+
+.palette-four .color-two-text{
+    color: #0D1B46;
+}
+
+.palette-four .color-three-text{
+    color: #ECE3E2;
+}
+
+.palette-four .color-four-text{
+    color: #65BCBF;
+}
