@@ -1,6 +1,7 @@
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     var $primaryNav = $('.primary-nav');
+    $('.timeline-item').removeClass('active');
     if(scroll > 0){
         $primaryNav.addClass('color-two-background');
     } else {

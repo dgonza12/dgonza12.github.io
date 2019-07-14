@@ -3,6 +3,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+section{
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -86,8 +91,8 @@ body {
     font-weight: 700;
     position: absolute;
     text-transform: uppercase;
-    left: -50px;
-    top: 50%;
+    left: -40px;
+    top: 25%;
     font-size: 160px;
     line-height: 120px;
     transform: translateY(-50%);
@@ -98,13 +103,20 @@ body {
     font-size: 32px;
 }
 
+.about .polaroid{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
+
 .about .timeline {
     position: relative;
 }
 
 .about .timeline-item {
     position: absolute;
-    border-radius: 15px;
+    border-radius: 6px;
     background-color: #fff;
     width: 300px;
     z-index: 3;
@@ -118,7 +130,27 @@ body {
 .timeline-item img{
     height: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
+}
+
+.timeline-item img.wide{
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.timeline-item a:hover{
+    text-decoration: none;
+}
+
+.timeline-item .link-block{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+    margin: 15px 0;
 }
 
 .timeline-item.left {
@@ -185,9 +217,10 @@ body {
 
 .timeline-item.active .close{
     display: block;
+    content: 'f00d';
 }
 
-.timeline-item .expand, .timeline-item .close {
+.timeline-item .expand{
     font-weight: 600;
     cursor: pointer;
     margin: 0 -15px;
@@ -196,8 +229,17 @@ body {
     transition: all 200ms ease-in;
 }
 
-.timeline-item .expand:hover, .timeline-item .close:hover {
+.timeline-item .close {
+    text-align: center;
+    width: 100%;
+}
+
+.timeline-item .expand:hover {
     background: #e3e3e3;;
+}
+
+.timeline-item .close:hover{
+    color: #f53e27;
 }
 
 .timeline .line {
@@ -211,10 +253,10 @@ body {
 }
 
 .tools {
-    overflow: hidden;
     background-color: #000;
     padding-top: 100px;
-    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -247,7 +289,7 @@ body {
 }
 
 .skill-list{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .quick-links{
@@ -258,4 +300,28 @@ body {
 
 .quick-links i{
     font-size: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-content h3{
+        text-align: center;
+    }
+    .hero-content .hair{
+        margin-top: 50px;
+    }
+    .quick-links span{
+        display: none;
+    }
+    .timeline-item{
+        width: 100%!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+    }
+    .timeline-item.active{
+        width: 100%!important;
+        transform: translate(-50%,-50%)!important;
+    }
+    .timeline-item.active .content{
+        padding: 10px 15px!important;
+    }
 }
