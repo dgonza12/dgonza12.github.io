@@ -15,7 +15,7 @@
 }
 
 .palette-one .color-three-background{
-    background: #f3ece5;
+    background: linear-gradient(#f3ece5, #fff);
 }
 
 .palette-one .color-four-background{
@@ -49,7 +49,7 @@
 }
 
 .palette-two .color-three-background{
-    background: #f7f8f3;
+    background: linear-gradient(#f7f8f3, #fff);
 }
 
 .palette-two .color-four-background{
@@ -97,7 +97,7 @@
 }
 
 .palette-four .color-three-background{
-    background: #ECE3E2;
+    background: linear-gradient(#ECE3E2, #fff);
 }
 
 .palette-four .color-three-background .fixed-text{
@@ -106,7 +106,7 @@
 
 .palette-four .color-two-background{
     background: #0D1B46;
-    color: #F8777D;
+    color: #FFF;
 }
 
 .palette-four .quick-links a{
@@ -123,13 +123,13 @@
 }
 
 .palette-four .quick-links a:hover {
-    color: #F8777D;
+    color: #FFF;
     background: #0D1B46;
     text-decoration: none;
 }
 
 .primary-nav.color-two-background{
-    color: #F8777D;
+    color: #FFF;
     transition: all ease-in 200ms;
 }
 
