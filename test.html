@@ -5,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-    <div id="p">Hello</div>
+    <button id="p">Hello</button>
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script>
     $('#p').on('click', function (event) {
-        parent.$('body').trigger('eventName');
+        window.parent.postMessage("hello there!", '*');
     });
 </script>
 </html>
