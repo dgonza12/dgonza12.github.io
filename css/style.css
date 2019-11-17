@@ -352,18 +352,33 @@ section{
     font-size: 26px;
 }
 
+.contact.color-one-background{
+    background-image: url(../images/poppy.png);
+    background-repeat: round;
+    background-size: 100px;
+}
+
 .phone-background{
-    background: url(../images/phone.png) #f2547291 center;
+    background: url(../images/phone.png) #f25472 center;
     background-position: bottom left;
     background-size: cover;
     min-height: 300px;
     border-radius: 25px;
+    padding: 15px 30px;
+}
+
+.unsplash-background{
+    min-height: 300px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background: #fea300;
 }
 
 .phone-background a{
     font-weight: 600;
     font-size: 18px;
     line-height: 40px;
+    color: #074477;
 }
 
 .phone-background a i{
