@@ -18,6 +18,27 @@ overflow: hidden;
     to {opacity: 1
     }
 }
+.hero h1{
+    text-align: center;
+    width: 100%;
+}
+.hero .image-modal h3{
+    margin-top: unset;
+    text-align: center;
+}
+
+.image-modal img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px;
+    margin: 0px 15px;
+}
+
+.image-modal img:hover{
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    box-shadow: 0 0 25px;
+}
 
 .noScroll .overlay{
     background: rgba(0,0,0,0.3);
@@ -346,6 +367,8 @@ section{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background: #ececec;
+    border-radius: 15px;
 }
 
 .quick-links i{
