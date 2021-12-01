@@ -53,5 +53,7 @@ debug = true;
 	});
 	ScriptLoader.loadAll(['js/notLoadable.js']).then(function () {
 		console.log(window.fakeCache);
+	}).catch(function (e) {
+		console.log(e);
 	});
 })();
