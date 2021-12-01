@@ -51,4 +51,7 @@ debug = true;
 	ScriptLoader.loadAll(urlsToLoad).then(function () {
 		console.log(window.fakeCache);
 	});
+	ScriptLoader.loadAll(['js/notLoadable.js']).then(function () {
+		console.log(window.fakeCache);
+	});
 })();
